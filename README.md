@@ -1,12 +1,57 @@
-# Getting Started with Create React App
+# Trivia-App
+
+Trivia-App is a minimalist trivia application that offers two different trivia style games. One is a multiple choice multiplayer game and the other is a rapid fire true or false game.
+
+---
+
+## Table of Contents
+
+1. Introduction
+2. Contributor
+3. Technologies
+4. Usage
+5. General Information
+
+---
+
+## Introduction
+
+Trivia-App was created as a solo project for the React module of April 2022 DigitalCrafts Full Time Web Development Course. The project was meant as an exercise for free practice and learning of React. It also builds on the foundation of working with an API and JSON data.
+
+---
+
+## Contributor
+
+This project was created and coded by
+
+- Ryan McMillan <https://github.com/rlmcmillan12>
+
+---
+
+## Technologies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- React
+- React-router
+- Redux
+- node
+- thunk
+- JavaScript
+- Styled-Components
+- html-entities
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Usage
+
+To run the app start by cloning the repository locally
+
+```
+add repository address
+```
+
+Enter: `npm start` into the terminal
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +59,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## General Information
 
-### `npm run build`
+This project is a minimalist trivia application. Once the application is opened it will take you to the home page. It gives a short basic introduction of the app. At the top of the screen is the navigation bar. By clicking multiple choice or true or false it will take you to wither game.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on multiple choice link will route to the multiple choice page.
+It gives you a description and two selects. To start a game you must pick the number of players (1-4) and number of rounds (5-20). Click the start button and you will be prompted to enter a name for the amount of players you selected. The game will advance once all the players have been entered. Each round starts with a card showing the round number. Once you click to start the round it will show a card for the player up at the beginning of each players turn. The player will be prompted to pick a category and difficulty. The default setting is any category and easy difficulty. The player is returned a question with four answers. The player chooses one and is taken to a correct screen or a wrong screen with the correct answer. After all the players have gone at the end of all of the rounds a winner screen appears. The screen will show the winner or winners if there is a tie for first.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clicking the true of false link will take you yo a game if rapid fire true or false that is always in motion. It give you a question and ten seconds to answer. If correct within the time limit it starts a counter for how many correct you have in a row. If you make the wrong choice or run out of time the counter goes back to zero and you start over.
