@@ -91,7 +91,7 @@ function Question() {
                                 <label htmlFor={`answer${i}`}>{answer}</label>
                             </Answer>
                         )))}
-                    <Button>Final Answer</Button> 
+                    <Button type='submit'>Final Answer</Button> 
                 </fieldset>
             </AnswerForm>
         </QuestionContainer>

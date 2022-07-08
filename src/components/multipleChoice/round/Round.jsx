@@ -15,7 +15,6 @@ function Round() {
     const turnState = useSelector(state => state.multipleChoiceGame.turnState)
     return (
         <RoundContainer>
-            
             {turnState === 0 && (<IsUp />)}
             {turnState === 1 && (<QuestionPicker />)}
             {turnState === 2 && (<Question />)}

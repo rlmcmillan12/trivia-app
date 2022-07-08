@@ -7,9 +7,11 @@ const HomeContainer = styled.div`
     align-items: center;
     & h1 {
         text-align: center;
+        margin-top: 60px;
     }
     & p {
         max-width: 500px;
+        margin-top: 60px;
         line-height: 1.5em;
         text-align: center;
         

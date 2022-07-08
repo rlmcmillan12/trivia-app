@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
+// import Modal from './Modal'
 
 const MCBBContainer = styled.div`
     display: flex;
@@ -31,8 +32,12 @@ const Button = styled.button`
 function MultipleChoiceBottomBar() {
     const players = useSelector(state => state.players.players)
     const round = useSelector(state => state.multipleChoiceGame.currentRound)
+    const handleClick = () => {
+
+    }
     return (
         <MCBBContainer>
+          {/* <Modal /> */}
           <PlayerScoreContainer>
             {players && (players.map((player, i) => <PlayerScoreCard key={i}>
               <span>
@@ -42,7 +47,7 @@ function MultipleChoiceBottomBar() {
                 {player.score}
               </span>
             </PlayerScoreCard> ))}
-            <PlayerScoreCard>{`Round: ${round}`}<Button >Quit</Button></PlayerScoreCard>
+            <PlayerScoreCard>{`Round: ${round}`}<Button onClick={handleClick} >Quit</Button></PlayerScoreCard>
           </PlayerScoreContainer>
         </MCBBContainer>
     )

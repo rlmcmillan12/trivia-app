@@ -8,6 +8,7 @@ const NavBarContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
+    margin-top: 30px;
     & h4 {
         padding-left: 15px;
     }

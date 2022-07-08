@@ -35,7 +35,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React
 - React-router
 - Redux
-- node
 - thunk
 - JavaScript
 - Styled-Components

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { decode } from 'html-entities'
 
@@ -35,13 +35,13 @@ function SpeedQuestions() {
             setCount(10)
             setQuestion(nextQuestion)
             setAnswer(!answer)
+            setStreak(0)
         }
-    },[count]);
+    },[count, answer]);
 
     const handleSubmit = (e) => {
         setAnswer(e)
         if(e === question.correct_answer) {
-            console.log('nice!')
             setStreak(streak + 1)
             setQuestion(nextQuestion)
             setCount(10)
