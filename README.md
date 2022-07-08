@@ -48,7 +48,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 To run the app start by cloning the repository locally
 
 ```
-add repository address
+https://github.com/rlmcmillan12/trivia-app
 ```
 
 Enter: `npm start` into the terminal
