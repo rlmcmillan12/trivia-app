@@ -4,6 +4,7 @@ import thunk from "redux-thunk"
 import { multipleChoiceGameReducer } from "./multipleChoiceGame/reducer"
 import { multipleChoiceSearch } from "./multipleChoiceSearch/reducer"
 import { playersReducer } from "./players/reducer"
+import { trueOrFalseGameReducer } from "./trueOrFalseGame/reducer"
 
 const localCache = (store) => (next) => (action) => {
     next(action)
@@ -17,6 +18,7 @@ const rootReducer = combineReducers(
         players: playersReducer,
         multipleChoiceGame: multipleChoiceGameReducer,
         multipleChoiceSearch: multipleChoiceSearch,
+        trueOrFalseGame: trueOrFalseGameReducer,
     }
 )
 
