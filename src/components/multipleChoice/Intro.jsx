@@ -85,7 +85,7 @@ function Intro() {
                     </FormDiv>
                     <FormDiv>
                     <Label htmlFor="">Number of rounds?: </Label>
-                    <Input type="number" min='1' max='20' placeholder='5-20'
+                    <Input type="number" min='5' max='20' placeholder='5-20'
                     value={rounds}
                     onChange={e => setRounds(Number(e.target.value))}
                     required
